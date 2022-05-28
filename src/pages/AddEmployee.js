@@ -23,12 +23,15 @@ const AddEmployee = () => {
         }
     })
 
-    useEffect(async () => {
-        let temp = await httpGetEmployeePinNumbers(localStorage.getItem('account'));
-        console.log(`Account number is: ${localStorage.getItem('account')}`)
-        for(let i=0; i<temp.length; i++) {
-            tempPin.push(temp[i].pinnum);
+    useEffect(() => {
+        async function fetchData(){
+            let temp = await httpGetEmployeePinNumbers(localStorage.getItem('account'));
+            console.log(`Account number is: ${localStorage.getItem('account')}`)
+            for(let i=0; i<temp.length; i++) {
+                tempPin.push(temp[i].pinnum);
+            }
         }
+        fetchData();
     },[]);
 
     const handleSubmit = (e) => {

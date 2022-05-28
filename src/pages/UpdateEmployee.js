@@ -22,17 +22,21 @@ const UpdateEmployee = () => {
         }
     },[])
     
-     useEffect( async ()=> {
-        const temp = await httpGetEmployees(localStorage.getItem('account'));
-        console.log(temp);
-        temp.sort(function(a, b) {
-            const nameA = a.firstname.toUpperCase();
-            const nameB = b.firstname.toUpperCase();
-            if (nameA < nameB) return -1;
-            if (nameA > nameB) return 1;
-            return 0;
-        })
-        setUpdateArray(temp);
+     useEffect(()=> {
+        async function fetchData(){
+
+            const temp = await httpGetEmployees(localStorage.getItem('account'));
+            console.log(temp);
+            temp.sort(function(a, b) {
+                const nameA = a.firstname.toUpperCase();
+                const nameB = b.firstname.toUpperCase();
+                if (nameA < nameB) return -1;
+                if (nameA > nameB) return 1;
+                return 0;
+            })
+            setUpdateArray(temp);
+        }
+        fetchData();
      },[])
 
     const handleSubmit = (event) => {

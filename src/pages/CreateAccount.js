@@ -24,11 +24,14 @@ const CreateAccount = () => {
         }
     });
 
-    useEffect(async () => {
-        let temp = await httpGetPinNumber(localStorage.getItem('account'));
-        for(let i=0; i<temp.length; i++) {
-            tempPin.push(temp[i].pinnum);
+    useEffect(() => {
+        async function fetchData(){
+            let temp = await httpGetPinNumber(localStorage.getItem('account'));
+            for(let i=0; i<temp.length; i++) {
+                tempPin.push(temp[i].pinnum);
+            }
         }
+        fetchData();
     });
   
     const handleSubmit = (e) => {

@@ -23,12 +23,15 @@ const QuickActions = () => {
         }
     },[]);
     
-    useEffect (async () => {
-        const temp = await httpGetQuickActions(localStorage.getItem('account'));
-        temp.sort(function (a, b) {
-            return a.id - b.id;
-        });
-        setQuickArray(temp);
+    useEffect (() => {
+        async function fetchData(){
+            const temp = await httpGetQuickActions(localStorage.getItem('account'));
+            temp.sort(function (a, b) {
+                return a.id - b.id;
+            });
+            setQuickArray(temp);
+        }
+        fetchData();
     },[]);
     
     const handleSubmit = (event) => {
