@@ -21,7 +21,7 @@ const QuickActions = () => {
         if(!localStorage.getItem('valid') || !localStorage.getItem('account')) {
             history.push('/');
         }
-    },[]);
+    });
     
     useEffect (() => {
         async function fetchData(){
