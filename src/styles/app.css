@@ -1,0 +1,271 @@
+.app {
+    margin-top: 10px;
+}
+/* Login Page */
+.ui.container.login-container{
+    width: 500px;
+    margin: 0;
+    padding: 12px;
+    background-color: rgb(225, 224, 224);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 2px solid green;
+}
+
+.field.field-login {
+    width: 360px;
+}
+.button.btn-login {
+    width: 150px;
+    margin-right: 10px;
+}
+.login.error.hidden {
+    visibility: hidden;
+}
+
+/* Styles setup */
+.container.container-width {
+    width: 800px;
+}
+.ui.two.column.grid {
+    margin-bottom: 10px;
+}
+.banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+hr {
+    margin-bottom: 20px;
+}
+
+.ui.celled.table {
+    margin-top: 30px;
+}
+.list {
+    margin-top: 20px;
+}
+.list:hover {
+    background-color: rgb(172, 244, 244);
+}
+.ui.form {
+    margin-top: 20px;
+}
+
+.ui.six.item.menu {
+    border: 0;
+}
+.item:before {
+    width: 0;
+}
+.thumbs.icon {
+    color: green;
+}
+.thumbs.icon.hidden {
+    visibility: hidden; 
+}
+.field.field-login.title {
+    margin-top: 20px;
+}
+.radio-btns {
+    padding: 5px; 
+}
+.radio-label {
+    padding: 10px;
+}
+
+/* Main Layout */
+
+.main-screen {
+    background-color: grey;
+    height: 100vh;
+}
+.display-screen-div {
+    text-align:center;
+    margin-bottom: 5px;
+    height: 90px;
+}
+.action-screen-div {
+    margin-top: 20px;
+}
+.sp {
+    margin-bottom: 10px;
+}
+
+.function-screen {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    background-color:black;
+    padding: 20px;
+    height: 80vh;
+    border: solid;
+}
+
+.transaction-view {
+    color: black;
+    background-color:rgb(195, 210, 235);
+    opacity: 90%;
+    height: 55vh;
+    border-radius: 5px;
+}
+
+p {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.changedue {
+    color: rgb(30, 255, 0);
+    
+}
+h2 {
+    letter-spacing: 1.3px;
+}
+
+.strike {
+    color: red;
+    text-decoration: line-through;
+}
+p {
+    margin-bottom: 3px;
+}
+
+.ui.m-0 {
+    margin: 0;
+}
+
+/* Action Screen */
+
+.inside-action-screen {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 2.3rem;
+    height: 100px;
+    width: 150px;
+    border: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 0 2px #999;
+    
+}
+.inside-action-screen:active {
+    background-color: red;
+    transform: translateY(4px);
+    box-shadow: 0 3px #666;
+}
+
+.inside-action-screen.one {
+    background-color: rgb(227, 135, 135);
+}
+
+.inside-action-screen.two {
+    background-color: rgb(72, 145, 214);
+}
+
+.inside-action-screen.three {
+    background-color:rgb(163, 248, 220);
+    
+}
+.inside-action-screen.three.active {
+    background-color: rgb(241, 32, 32);
+}
+
+.inside-action-screen.four {
+    background-color:rgb(172, 120, 221);
+}
+.inside-action-screen.four.active {
+    background-color: rgb(241, 32, 32);
+}
+
+.inside-action-screen.five {
+    background-color:rgb(161, 72, 72);
+}
+
+.inside-action-screen.six {
+    background-color:rgb(244, 210, 158); 
+}
+
+.inside-action-screen.seven {
+    background-color:rgb(201, 201, 53);
+}
+
+.inside-action-screen.eight {
+    background-color:cadetblue;
+}
+
+/* Input Screen */
+
+.size {
+    height: 355px;
+}
+.dis {
+    text-align: center;
+    height: 50px;
+    margin-bottom: 20px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    padding-top: 10px;
+}
+
+.inside {
+    text-align: center;
+    font-size: 2rem;
+    height: 56px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: rgb(48, 48, 252);
+    padding-top: 15%;
+    overflow: hidden;
+    box-shadow: 0 3px #999;
+}
+
+.inside:active {
+    background-color: red;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+.inside.enter {
+    background-color: green;
+}
+
+.inside.checkout {
+    line-height: 1.1;
+    font-size: 1.5rem;
+    background-color:blueviolet;
+    padding-top: 7%;
+}
+.ui.grid>.row {
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+}
+
+/* PermanentKeys */
+.pKeys {
+    text-align: center;
+    color: white;
+    padding-top: 1.5rem;
+    height: 80px;
+    font-size: .8em;
+    background-color: rgb(0, 70, 128);
+    margin-bottom: 15px;  
+    border:solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 3px; 
+}
+
+.home {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
