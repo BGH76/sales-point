@@ -14,14 +14,6 @@ const PermanentKeys = () => {
     const keyNum = useSelector(state => state.keyNumCounter);
     const user = useSelector(state => state.userLoggedIn.user);
 
-    // useEffect( async () => {
-    //     const temp = await httpGetQuickActions(localStorage.getItem('account'));
-    //     temp.sort(function(a, b) {
-    //         return a.id - b.id;
-    //     })
-    //     setTtempData(temp);
-    // },[])
-
     useEffect(() => {
         async function fetchData(){
             const temp = await httpGetQuickActions(localStorage.getItem('account'));

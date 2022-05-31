@@ -1,7 +1,6 @@
 
 import lhost from '../apis/index';
 
-// const API_URL = 'http://localhost:8000'
 const API_URL = 'https://my-point-of-sale.herokuapp.com';
 
 async function httpGetAccountInfo(loginInput) {
