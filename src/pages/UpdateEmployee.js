@@ -49,6 +49,7 @@ const UpdateEmployee = () => {
         httpUpdateEmployee(temp);
         setThumbsUp('');
         setTimeout(()=>setThumbsUp('hidden'),500);
+        history.push('/updateemp');
     }
 
     const selectEmployee =  (ft, lt, t, p) => {
