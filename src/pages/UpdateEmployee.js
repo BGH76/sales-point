@@ -39,7 +39,7 @@ const UpdateEmployee = () => {
         fetchData();
      },[])
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         let temp = {
             firstname: event.target.firstname.value,
@@ -47,7 +47,7 @@ const UpdateEmployee = () => {
             title: event.target.title.value,
             pinnum: event.target.pinnum.value,
         }
-        httpUpdateEmployee(temp);
+        await httpUpdateEmployee(temp);
         setThumbsUp('');
         setTimeout(()=>setThumbsUp('hidden'),500);
         history.push('/updateemp');
