@@ -40,7 +40,7 @@ const UpdateEmployee = () => {
      },[])
 
     const handleSubmit = async (event) => {
-        event.preventDefault();
+        // event.preventDefault();
         let temp = {
             firstname: event.target.firstname.value,
             lastname: event.target.lastname.value,
