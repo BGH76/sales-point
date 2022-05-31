@@ -47,15 +47,10 @@ const UpdateEmployee = () => {
             title: event.target.title.value,
             pinnum: event.target.pinnum.value,
         }
-        httpUpdateEmployee(temp)
-        .then(()=>{
-            setThumbsUp('');
-            setTimeout(()=>setThumbsUp('hidden'),500);
-            history.push('/updateemp');
-        })
-        // setThumbsUp('');
-        // setTimeout(()=>setThumbsUp('hidden'),500);
-        // history.push('/updateemp');
+        httpUpdateEmployee(temp);
+        setThumbsUp('');
+        setTimeout(()=>setThumbsUp('hidden'),500);
+        history.push('/updateemp');
     }
 
     const selectEmployee =  (ft, lt, t, p) => {
