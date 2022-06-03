@@ -19,6 +19,11 @@ const LoginPage = () => {
             username: e.target.username.value,
             password: e.target.password.value
         }
+        // For Demo login
+        if(!temp.username && !temp.password) {
+            temp.username = "Brian";
+            temp.password = "321";
+        }
         const result = await handleLogin(temp);
         if (result === 'invalid') {
             console.log(result);
@@ -31,12 +36,10 @@ const LoginPage = () => {
                 <div className="ui container login-container">
                     <h1>Welcome to the Login Page</h1>
                     <form onSubmit={handleSubmit} className="ui form error">
-                        {/* <Field name="username" component={this.renderInput} label="Username" /> */}
                         <div className="field field-login">
                             <label>Username</label>
                             <input name='username' value={`${username}`} onChange={(e)=> setUsername(e.target.value)} onFocus={()=>setError('hidden')} placeholder="Username"></input>
                         </div>
-                        {/* <Field name="password" component={this.renderInput} label="Password" /> */}
                         <div className="field field-login">
                             <label>Password</label>
                             <input name='password' value={`${password}`} onChange={(e)=> setPassword(e.target.value)} onFocus={()=>setError('hidden')} placeholder="Password"></input>
@@ -46,6 +49,9 @@ const LoginPage = () => {
                     </form>
                     <div className={`login error ${error}`} style={{color: 'red'}}>
                         Error: Invalid Username or Password
+                    </div>
+                    <div style={{color: 'red'}}>
+                        For Demo only: Username Brian Password 321, or create account
                     </div>
                 </div>
             </React.Fragment>
