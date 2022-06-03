@@ -20,7 +20,7 @@ const LoginPage = () => {
             password: e.target.password.value
         }
         // For Demo login
-        if(!temp.username && !temp.password) {
+        if(username === '' && password === '') {
             temp.username = "Brian";
             temp.password = "321";
         }
