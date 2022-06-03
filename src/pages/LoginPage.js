@@ -22,7 +22,7 @@ const LoginPage = () => {
         // For Demo login
         if(username === '' && password === '') {
             temp.username = "Brian";
-            temp.password = "321";
+            temp.password = "4321";
         }
         const result = await handleLogin(temp);
         if (result === 'invalid') {
@@ -51,7 +51,7 @@ const LoginPage = () => {
                         Error: Invalid Username or Password
                     </div>
                     <div style={{color: 'red'}}>
-                        For Demo only: Username Brian Password 321, or create account
+                        For Demo only: Username Brian Password 4321, or create account
                     </div>
                 </div>
             </React.Fragment>

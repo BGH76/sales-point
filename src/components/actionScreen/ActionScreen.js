@@ -70,6 +70,7 @@ class ActionScreen extends React.Component {
                         <div className="column">
                             <div className="inside-action-screen seven" onClick={() => this.userLoginHelper('user_login')}>
                                 {this.props.user===null? "Login": "Logout"}
+                                <p style={{textAlign:'center', color: 'red'}}>Demo pin 2222</p>
                             </div>
                         </div>
                     </div>
