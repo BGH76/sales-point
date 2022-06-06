@@ -108,7 +108,7 @@ const InputScreen = (props) => {
                         <div className="inside" onClick={()=> settingsLogin()} >
                             Settings
                             <div style={{color:'red', fontSize:'.9rem'}}>
-                                Double click
+                                Login - double click
                             </div>
                         </div>
                     </div>
