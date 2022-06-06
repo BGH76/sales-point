@@ -19,6 +19,7 @@ class TransactionScreen extends React.Component {
     }
 
     render(){
+        console.log(this.props.transactionArray);
         return(
             <React.Fragment>
                 <h3>Transaction Screen</h3>
